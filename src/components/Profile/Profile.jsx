@@ -3,7 +3,7 @@ import defaultImage from './defaultImage.png'
 
 const Profile = ({ name, tag, location, avatar = defaultImage, stats }) => {
 return (
-    <div className={style.profile}>
+    <section className={style.profile}>
         <div className={style.description}>
             <img
                 src={avatar}
@@ -29,7 +29,7 @@ return (
                 <span className={style.quantity}>{stats.likes}</span>
             </li>
         </ul>
-    </div>);
+    </section>);
 };
 
 export default Profile;
