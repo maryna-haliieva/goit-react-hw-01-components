@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import style from './Profile.module.css'
 import defaultImage from './defaultImage.png'
 
@@ -32,4 +33,13 @@ return (
     </section>);
 };
 
+Profile.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  stats: PropTypes.objectOf(PropTypes.number.isRequired).isRequired,
+};
+
 export default Profile;
+
