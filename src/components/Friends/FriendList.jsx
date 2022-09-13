@@ -3,7 +3,6 @@ import FriendItem from './FriendItem'
 
 
 const FriendList = ( {friends} ) => {
-  console.log(friends);
   return (
     <ul className={style.friendList}>
       {friends.map(friend => (
