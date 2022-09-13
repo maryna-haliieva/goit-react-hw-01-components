@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import style from './FriendItem.module.css'
 import defaultImage from '../Profile/defaultImage.png'
 
-const FriendItem = ({ props }) => {
-    const { avatar = defaultImage, name, isOnline } = props;
+const FriendItem = ({ avatar = defaultImage, name, isOnline }) => {
+
     return (
         <li className={style.item}>
             <span className={isOnline ? style.online : style.offline}>
